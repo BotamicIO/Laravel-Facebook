@@ -11,7 +11,7 @@ $ composer require faustbrian/laravel-facebook
 Add the service provider to `config/app.php` in the `providers` array.
 
 ```php
-BrianFaust\Facebook\ServiceProvider::class
+BrianFaust\Facebook\FacebookServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
