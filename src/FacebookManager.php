@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of Laravel Facebook.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Facebook;
 
+use Illuminate\Http\Request;
 use League\OAuth2\Client\Grant\RefreshToken;
 use League\OAuth2\Client\Provider\Facebook;
-use Illuminate\Http\Request;
 
 class FacebookManager
 {
