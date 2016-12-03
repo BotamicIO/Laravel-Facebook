@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Tests\Facebook\Facades;
 
 use BrianFaust\Facebook\Facades\Facebook;

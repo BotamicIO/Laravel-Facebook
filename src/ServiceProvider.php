@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Facebook;
 
 use BrianFaust\ServiceProvider\ServiceProvider as BaseServiceProvider;
@@ -21,7 +23,7 @@ class ServiceProvider extends BaseServiceProvider
     /**
      * Register the application services.
      */
-    public function register()
+    public function register(): void
     {
         $this->app->singleton('facebook.auth.manager', function ($app) {
             return new FacebookManager($app->session);
@@ -31,7 +33,7 @@ class ServiceProvider extends BaseServiceProvider
     /**
      * @return string
      */
-    protected function getPackageName()
+    protected function getPackageName(): string
     {
         return 'facebook';
     }
