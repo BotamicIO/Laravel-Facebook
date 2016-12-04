@@ -165,7 +165,7 @@ class FacebookManager
     /**
      * @param $refreshToken
      */
-    public function refreshToken($refreshToken)
+    public function refreshToken($refreshToken): void
     {
         $this->refreshToken = $refreshToken;
     }

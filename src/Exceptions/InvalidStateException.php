@@ -22,8 +22,6 @@ declare(strict_types=1);
 
 namespace BrianFaust\Facebook\Exceptions;
 
-use Exception;
-
-class InvalidStateException extends Exception
+class InvalidStateException extends \Exception
 {
 }
