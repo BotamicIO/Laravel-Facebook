@@ -10,23 +10,11 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 $ composer require faustbrian/laravel-facebook
 ```
 
-Add the service provider to `config/app.php` in the `providers` array.
-
-```php
-BrianFaust\Facebook\FacebookServiceProvider::class
-```
-
-If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
-
-```php
-'FBAuth' => BrianFaust\Facebook\Facades\Facebook::class
-```
-
 ## Usage
 
 ``` php
 Route::get('/facebook', function (Request $request) {
-    $facebook = FBAuth::create([
+    $facebook = Facebook::create([
         'clientId' => 'your-client-id',
         'clientSecret' => 'your-client-secret',
         'redirectUri' => 'https://homestead.app/facebook',
@@ -46,19 +34,11 @@ Route::get('/facebook', function (Request $request) {
 });
 ```
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 

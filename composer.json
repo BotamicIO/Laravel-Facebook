@@ -9,14 +9,14 @@
         "homepage": "https://brianfaust.de"
     }],
     "require": {
-        "php": "^7.1",
+        "php": "^7.0",
         "faustbrian/laravel-service-provider": "^0.1.3",
         "league/oauth2-facebook": "^1.4"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.2",
+        "graham-campbell/testbench": "^3.3",
         "mockery/mockery": "^0.9.5",
-        "phpunit/phpunit": "^5.6"
+        "phpunit/phpunit": "^6.1"
     },
     "autoload": {
         "psr-4": {
@@ -29,11 +29,20 @@
         }
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "sort-packages": true
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "BrianFaust\\Facebook\\FacebookServiceProvider"
+            ],
+            "aliases": {
+                "Facebook": "BrianFaust\\Facebook\\Facades\\Facebook"
+            }
         }
     },
     "minimum-stability": "dev",

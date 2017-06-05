@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Facebook.
  *
@@ -19,23 +16,15 @@ use BrianFaust\ServiceProvider\ServiceProvider as BaseServiceProvider;
 /**
  * Class ServiceProvider.
  */
-class ServiceProvider extends BaseServiceProvider
+class FacebookServiceProvider extends BaseServiceProvider
 {
     /**
      * Register the application services.
      */
-    public function register(): void
+    public function register()
     {
         $this->app->singleton('facebook.auth.manager', function ($app) {
             return new FacebookManager($app->session);
         });
-    }
-
-    /**
-     * @return string
-     */
-    protected function getPackageName(): string
-    {
-        return 'facebook';
     }
 }

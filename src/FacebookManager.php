@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Facebook.
  *
@@ -157,7 +154,7 @@ class FacebookManager
     /**
      * @param $refreshToken
      */
-    public function refreshToken($refreshToken): void
+    public function refreshToken($refreshToken)
     {
         $this->refreshToken = $refreshToken;
     }
