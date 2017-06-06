@@ -23,6 +23,14 @@ class FacebookServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
+        $this->registerManager();
+    }
+
+    /**
+     * Register the manager.
+     */
+    private function registerManager()
+    {
         $this->app->singleton('facebook.auth.manager', function ($app) {
             return new FacebookManager($app->session);
         });
