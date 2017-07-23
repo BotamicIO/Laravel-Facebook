@@ -12,8 +12,8 @@
 namespace BrianFaust\Facebook;
 
 use Illuminate\Http\Request;
-use League\OAuth2\Client\Grant\RefreshToken;
 use League\OAuth2\Client\Provider\Facebook;
+use League\OAuth2\Client\Grant\RefreshToken;
 
 class FacebookManager
 {
@@ -86,7 +86,7 @@ class FacebookManager
         }
 
         // generate a new authorization url if no code is given
-        if (!$request->has('code')) {
+        if (! $request->has('code')) {
             $url = $this->provider->getAuthorizationUrl($options);
 
             $this->session->set('oauth2state', $this->provider->getState());
@@ -97,7 +97,7 @@ class FacebookManager
         // check given state against previously stored one to mitigate CSRF attack
         $invalidState = ($request->get('state') !== $this->session->get('oauth2state'));
 
-        if (!$request->has('state') || $invalidState) {
+        if (! $request->has('state') || $invalidState) {
             $this->session->forget('oauth2state');
 
             $request = new Request($request->except('code'));
