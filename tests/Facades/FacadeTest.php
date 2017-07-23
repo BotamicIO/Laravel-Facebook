@@ -11,10 +11,10 @@
 
 namespace BrianFaust\Tests\Facebook\Facades;
 
-use BrianFaust\Facebook\Facades\Facebook;
 use BrianFaust\Facebook\FacebookManager;
-use BrianFaust\Tests\Facebook\AbstractTestCase;
+use BrianFaust\Facebook\Facades\Facebook;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
+use BrianFaust\Tests\Facebook\AbstractTestCase;
 
 class FacadeTest extends AbstractTestCase
 {
