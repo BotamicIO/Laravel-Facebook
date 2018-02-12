@@ -13,10 +13,10 @@ declare(strict_types=1);
 
 namespace BrianFaust\Tests\Facebook\Facades;
 
-use BrianFaust\Facebook\FacebookManager;
 use BrianFaust\Facebook\Facades\Facebook;
-use GrahamCampbell\TestBenchCore\FacadeTrait;
+use BrianFaust\Facebook\FacebookManager;
 use BrianFaust\Tests\Facebook\AbstractTestCase;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class FacadeTest extends AbstractTestCase
 {
