@@ -5,17 +5,17 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Facebook.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Tests\Facebook\Facades;
+namespace Artisanry\Tests\Facebook\Facades;
 
-use BrianFaust\Facebook\Facades\Facebook;
-use BrianFaust\Facebook\FacebookManager;
-use BrianFaust\Tests\Facebook\AbstractTestCase;
+use Artisanry\Facebook\Facades\Facebook;
+use Artisanry\Facebook\FacebookManager;
+use Artisanry\Tests\Facebook\AbstractTestCase;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class FacadeTest extends AbstractTestCase

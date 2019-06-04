@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-facebook",
+    "name": "artisanry/facebook",
     "description": ":package_description",
-    "keywords": ["laravel", "framework", "Laravel-Facebook", "Laravel Facebook", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Facebook", "Laravel Facebook"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Facebook\\": "src"
+            "Artisanry\\Facebook\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Facebook\\": "tests"
+            "Artisanry\\Tests\\Facebook\\": "tests"
         }
     },
     "config": {
@@ -38,10 +38,10 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Facebook\\FacebookServiceProvider"
+                "Artisanry\\Facebook\\FacebookServiceProvider"
             ],
             "aliases": {
-                "Facebook": "BrianFaust\\Facebook\\Facades\\Facebook"
+                "Facebook": "Artisanry\\Facebook\\Facades\\Facebook"
             }
         }
     },
